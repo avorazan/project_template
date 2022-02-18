@@ -21,5 +21,10 @@ pipeline {
                 sh 'ssh root@us-02 \'uptime\''
             }
         }
+         stage("Third step") {
+            steps {
+                sh 'ssh root@us-02 \'uptime\''
+            }
+        }
     }
 }
